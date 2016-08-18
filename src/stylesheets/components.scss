@@ -1,0 +1,17 @@
+@import "bootstrap";
+
+.tile {
+  width: 11%;
+  height: 11%;
+  margin: 0.75%;
+  outline: 1px solid #000000;
+  list-style-type: none;
+  float:left;
+}
+
+.gameboard {
+  height: 512px;
+  width: 512px;
+  padding: 0px;
+  outline: 1px solid #000000;
+}
