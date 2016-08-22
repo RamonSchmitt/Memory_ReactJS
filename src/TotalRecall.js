@@ -3,7 +3,7 @@ import Menu from './Menu';
 import Gameboard from './Gameboard';
 import Progress from './Progress';
 
-class Memory extends React.Component {
+class TotalRecall extends React.Component {
     render() {
         return (
           <div className="container">
@@ -15,4 +15,4 @@ class Memory extends React.Component {
     }
 }
 
-export default Memory;
+export default TotalRecall;

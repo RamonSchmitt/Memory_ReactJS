@@ -1,6 +1,4 @@
 import React from 'react';
-import Memory from './Memory';
-import Turn from './Turn';
 
 class Progress extends React.Component {
   render() {
