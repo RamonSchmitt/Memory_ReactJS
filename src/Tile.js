@@ -1,12 +1,11 @@
 import React from 'react';
 
-class Tile extends React.Component {
-    render() {
-        return (
-          <li className="tile">
-          </li>
-        );
-    }
+export default class Tile extends Component {
+  render() {
+    return (
+      <div>
+        <Memory />
+      </div>
+    );
+  }
 }
-
-export default Tile;

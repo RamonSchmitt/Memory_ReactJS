@@ -3,11 +3,11 @@ import './stylesheets/components.scss';
 import Memory from './Memory';
 
 class App extends React.Component {
-    render() {
-        return (
-            <Memory/>
-        );
-    }
+  render() {
+    return (
+        <Memory/>
+    );
+  }
 }
 
 export default App;
