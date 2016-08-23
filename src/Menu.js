@@ -1,20 +1,24 @@
 import React from 'react';
+import Gameboard from './Gameboard';
 
 class Menu extends React.Component {
-  constructor() {
-    super();
-    this. _handleClick = this. _handleClick.bind(this);
+  constructor(props) {
+  super(props);
+  this.state = { tiles: props.tiles };
+  this.newGame = this.newGame.bind(this);
   }
 
-  _handleClick() {
-    alert("Good luck");
+  newGame() {
+    this.setState({
+      
+    });
   }
 
     render() {
         return (
           <div>
             <h1>TOTAL RECALL</h1>
-            <button onClick={this._handleClick}>NEW GAME</button>
+            <button onClick={this.newGame}>NEW GAME</button>
           </div>
         );
     }

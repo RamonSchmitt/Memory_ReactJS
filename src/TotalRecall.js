@@ -7,7 +7,7 @@ class TotalRecall extends React.Component {
     render() {
         return (
           <div className="container">
-            <Menu/>
+            <Menu />
             <Gameboard />
             <Progress />
           </div>
