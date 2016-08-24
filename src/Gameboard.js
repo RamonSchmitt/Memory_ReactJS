@@ -106,8 +106,8 @@ class Gameboard extends React.Component {
         <ul className="gameboard">
           {this.state.tiles.map((tile, index) => (
               <li className="tile" key={index}>
-                {console.log(tile.tileid)}
-                <Tile />
+                {console.log(tile.image)}
+                <Tile image={tile.image}/>
               </li>
           ))}
         </ul>
