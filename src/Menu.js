@@ -9,9 +9,7 @@ class Menu extends React.Component {
   }
 
   newGame() {
-    this.setState({
-      
-    });
+    this.setState({tiles: this.state.tiles});
   }
 
     render() {

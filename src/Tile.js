@@ -15,7 +15,7 @@ class Tile extends React.Component {
   render() {
     return (
       <a href="#" onClick={this.toggleFlip.bind(this)}>
-        { this.state.flip ? <img src={require('./images/' + this.props.image) } /> : <img src={require('./images/bg.gif')} /> }
+        {this.state.flip ? <img src={require('./images/' + this.props.image)} /> : <img src={require('./images/bg.gif')} /> }
       </a>
     );
   }
