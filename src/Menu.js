@@ -1,5 +1,4 @@
 import React from 'react';
-import Gameboard from './Gameboard';
 
 class Menu extends React.Component {
   constructor(props) {
@@ -9,7 +8,8 @@ class Menu extends React.Component {
   }
 
   newGame() {
-    this.setState({tiles: this.state.tiles});
+    alert("Good Luck");
+    this.props.resetGame();
   }
 
     render() {

@@ -1,21 +1,15 @@
 import React from 'react';
-import Gameboard from './Gameboard';
 
 class Tile extends React.Component {
-  constructor(props) {
-  super(props);
-  this.state = { tiles: props.tiles };
-  this.toggleFlip = this.toggleFlip.bind(this);
-  }
-
-  toggleFlip() {
-    this.setState({flip: !this.state.flip});
+  flipTile() {
+    this.props.flipTile(this.props.index)
   }
 
   render() {
+    console.log(this.props)
     return (
-      <a href="#" onClick={this.toggleFlip.bind(this)}>
-        {this.state.flip ? <img src={require('./images/' + this.props.image)} /> : <img src={require('./images/bg.gif')} /> }
+      <a href="#" onClick={this.flipTile.bind(this)}>
+        {this.props.flip ? <img src={require('./images/' + this.props.image)} /> : <img src={require('./images/bg.gif')} /> }
       </a>
     );
   }
