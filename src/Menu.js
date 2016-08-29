@@ -8,7 +8,6 @@ class Menu extends React.Component {
   }
 
   newGame() {
-    alert("Good Luck");
     this.props.resetGame();
   }
 

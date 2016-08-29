@@ -4,7 +4,7 @@ import Gameboard from './Gameboard';
 import Progress from './Progress';
 
 function createTiles() {
-  return [
+  return shuffle([
     { tileid: 1, pair: false, flip: false, image: "01.gif" },
     { tileid: 1, pair: false, flip: false, image: "01.gif" },
     { tileid: 2, pair: false, flip: false, image: "02.gif" },
@@ -69,13 +69,32 @@ function createTiles() {
     { tileid: 31, pair: false, flip: false, image: "31.gif" },
     { tileid: 32, pair: false, flip: false, image: "32.gif" },
     { tileid: 32, pair: false, flip: false, image: "32.gif" }
-  ];
+  ]);
 }
 
 var players = [
   { name: "Player 1", turn: true, score: 0 },
   { name: "Player 2", turn: false, score: 0 }
 ];
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
 
 class TotalRecall extends React.Component {
   constructor() {
@@ -99,11 +118,12 @@ class TotalRecall extends React.Component {
   }
 
   render() {
+    console.log(this.state.tiles);
     return (
       <div className="container">
         <Menu resetGame={this.resetGame.bind(this)} />
         <Gameboard tiles={this.state.tiles} flipTile={this.flipTile.bind(this)}/>
-        <Progress />
+        <Progress players={this.state.players}/>
       </div>
     );
   }
