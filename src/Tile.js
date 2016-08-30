@@ -9,7 +9,7 @@ class Tile extends React.Component {
     console.log(this.props)
     return (
       <a href="#" onClick={this.flipTile.bind(this)}>
-        {this.props.flip ? <img src={require('./images/' + this.props.image)} /> : <img src={require('./images/bg.gif')} /> }
+        {this.props.flip ? <img src={require('./images/game/01/' + this.props.image)} /> : <img src={require('./images/bg.gif')} /> }
       </a>
     );
   }

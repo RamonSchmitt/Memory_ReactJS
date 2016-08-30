@@ -3,6 +3,8 @@ import Menu from './Menu';
 import Gameboard from './Gameboard';
 import Progress from './Progress';
 
+
+
 function createTiles() {
   return shuffle([
     { tileid: 1, pair: false, flip: false, image: "01.gif" },
@@ -123,7 +125,6 @@ class TotalRecall extends React.Component {
       <div className="container">
         <Menu resetGame={this.resetGame.bind(this)} />
         <Gameboard tiles={this.state.tiles} flipTile={this.flipTile.bind(this)}/>
-        <Progress players={this.state.players}/>
       </div>
     );
   }

@@ -1,4 +1,8 @@
-# React Starter
+# Total Recall
+
+## A memory game in ReactJS
+
+A memory game in ReactJS with bootstrap sass.
 
 ## Installation
 
@@ -11,5 +15,4 @@ open http://localhost:3000
 
 ------------------
 
-Simplified version of [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate) for the
-traineeship program.
+**Work in progress
