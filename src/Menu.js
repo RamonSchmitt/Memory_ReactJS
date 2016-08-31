@@ -13,8 +13,8 @@ class Menu extends React.Component {
 
     render() {
         return (
-          <div>
-            <h1>TOTAL RECALL</h1>
+          <div className="menu">
+            <h1>Total Recall</h1>
             <button onClick={this.newGame}>NEW GAME</button>
           </div>
         );
